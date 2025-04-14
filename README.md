@@ -60,21 +60,3 @@ The code snippet provides examples of how to use the B-FUN-500 GLaDOS interprete
 ### Testing
 
 To run unit tests, execute `stack test --coverag` in the project directory. This will run the tests defined in the `tests` directory.
-
-### Contributing
-
-Rayane Memiche
-Nicolas Poupon
-Louis De Macedo
-Lucas Benhaim
-Francois Dupont
-
-Contributions are welcome. Please submit pull requests for any enhancements.
-
-### License
-
-[Specify License]
-
-### Acknowledgments
-
-Thanks to all contributors and those who provided valuable insights into Haskell and LISP.
