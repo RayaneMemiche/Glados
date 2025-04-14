@@ -1,0 +1,44 @@
+name: glados
+version: 0.1.0
+dependencies:
+  - base >= 4.18.0.0
+  - mtl >= 2.3.1
+  - containers
+
+library:
+  source-dirs: src
+  exposed-modules:
+    - AST
+    - Parser
+    - VM
+    - Primitives
+    - Compiler
+    - Utils
+    - VarAddress
+
+executable:
+  main: Main.hs
+  source-dirs: src
+
+tests:
+  spec:
+    main: UnitTests.hs
+    source-dirs:
+      - tests
+    dependencies:
+      - base >= 4.18.0.0
+      - containers
+      - HUnit
+      - hspec
+      - call-stack
+      - deepseq
+      - glados
+    other-modules:
+      - UnitTests
+      - ASTTests
+      - CompilerTests
+      - ParserTests
+      - PrimitivesTests
+      - UtilsTests
+      - VarAddressTests
+      - VMTests
